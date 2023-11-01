@@ -1,0 +1,31 @@
+/* Main Styles */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li.checked {
+    background: #6c7075; /* Muted gray - Bootstrap's secondary */
+    color: #f8f9fa; /* White-ish color for contrast */
+    text-decoration: line-through;
+}
+
+.close {
+    padding: 8px 16px;
+    color: #212529; /* Dark gray - Bootstrap's dark */
+}
+
+h2 {
+    color: #212529; /* Dark gray - Bootstrap's dark */
+}
+
+.timestamp {
+    text-align: right;
+    padding-left: 10px;
+    font-size: 13px;
+    margin-left: auto;
+}

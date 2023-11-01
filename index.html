@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-light py-4"> <!-- Added padding and light background -->
+
+<h2 class="mb-4">To Do List</h2>
+<div id="input" class="mb-4 d-flex">
+    <input type="text" id="myInput" placeholder="Add a new task..." class="form-control mr-2"> <!-- Modified placeholder -->
+    <button id="overlay-button" onclick="addNewTask()" class="btn btn-success"><i class="fas fa-plus"></i></button> <!-- Added icon and changed color -->
+</div>
+
+<div id="buttons" class="mb-4">
+    <button id="rem-completed" class="btn btn-warning">Remove Completed <i class="fas fa-check"></i></button> <!-- Added icon and changed color -->
+    <button id="rem-all" class="btn btn-danger">Remove All <i class="fas fa-trash"></i></button> <!-- Added icon -->
+    <button id="clear-storage" class="btn btn-secondary">Clear Storage <i class="fas fa-trash-restore"></i></button>
+    <button id="pick-random" class="btn btn-info">Pick Todo to Do Right Now</button>
+</div>
+
+<div id="main" class="w-50 bg-white p-4 rounded shadow-sm"> <!-- Added padding, rounded corners and shadow -->
+    <select id="sort-dropdown">
+        <option value="asc">Date Ascending</option>
+        <option value="desc">Date Descending</option>
+    </select>
+    <div id="list">
+        <ul id="myUL" class="list-group"></ul>
+    </div>
+</div>
+
+<!-- Adding Bootstrap JS and its dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+
+</html>
